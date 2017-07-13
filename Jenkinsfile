@@ -20,13 +20,13 @@ pipeline
                 sh 'java -jar rectangle.jar 7 9'
             }
         }
-
-        post
+    }
+    
+    post
+    {
+        succces
         {
-            succces
-            {
-                archiveArtifacts artifacts: 'rectangle.jar', fingerprint: true
-            }
+            archiveArtifacts artifacts: 'rectangle.jar', fingerprint: true
         }
     }
 }
