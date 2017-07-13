@@ -21,10 +21,10 @@ pipeline
             }
         }
     }
-    
+
     post
     {
-        succces
+        success
         {
             archiveArtifacts artifacts: 'rectangle.jar', fingerprint: true
         }
